@@ -1,32 +1,70 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ace_editor {
+  background-color: #222831 !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ace_editor .ace_gutter {
+  background: #222831;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ace_editor .ace_list {
+  color: #d8d8d8;
+}
+
+.ace_editor .ace_gutter-active-line {
+  background-color: #373142;
+}
+
+.ace_editor .ace_heading {
+  color: #82d8d8;
+}
+
+.ace_editor .ace_cursor {
+  color: white;
+}
+
+.ace_editor .ace_string {
+  color: #e54b4b;
+}
+
+.scrollbar {
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#scroll-style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #222831;
+  border-radius: 5px;
+}
+
+#scroll-style::-webkit-scrollbar {
+  width: 5px;
+  background-color: #222831;
+}
+
+#scroll-style::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #222831;
+  background-image: -webkit-gradient(
+    linear,
+    40% 0%,
+    75% 84%,
+    from(#4d9c41),
+    to(#19911d),
+    color-stop(0.6, #54de5d)
+  );
+}
+
+.fileinput {
+  margin: 5px auto;
 }
